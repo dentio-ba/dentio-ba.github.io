@@ -1,0 +1,34 @@
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-icon">
+            <img src="favicon-icon.svg" alt="Dentify" width="24" height="24">
+          </span>
+          <span>Dent<span class="accent">ify</span></span>
+        </div>
+        <p class="footer-desc">{{ ts.t('footer.desc') }}</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>{{ ts.t('footer.links') }}</h4>
+        <a routerLink="/home">{{ ts.t('nav.home') }}</a>
+        <a routerLink="/solutions">{{ ts.t('nav.solutions') }}</a>
+        <a routerLink="/clients">{{ ts.t('nav.clients') }}</a>
+        <a routerLink="/contact">{{ ts.t('nav.contact') }}</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>{{ ts.t('footer.contact') }}</h4>
+        <span>info&#64;dentify.ba</span>
+        <span>+387 33 123 456</span>
+        <span>Sarajevo, BiH</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; {{ year }} Dentify. {{ ts.t('footer.rights') }}</span>
+    </div>
+  </div>
+</footer>

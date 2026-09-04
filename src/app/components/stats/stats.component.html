@@ -1,0 +1,13 @@
+<section id="stats" class="section section-dark">
+  <div class="container">
+    <h2 class="stats-title">{{ ts.t('stats.title') }}</h2>
+    <div class="stats-grid">
+      @for (s of stats; track s.key) {
+        <div class="stat-card">
+          <div class="stat-value">{{ s.value }}</div>
+          <div class="stat-label">{{ ts.t('stats.' + s.key) }}</div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

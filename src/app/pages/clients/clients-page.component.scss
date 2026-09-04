@@ -1,0 +1,139 @@
+.clients-hero {
+  padding: 140px 0 60px;
+  text-align: center;
+
+  h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--white);
+    letter-spacing: -1.5px;
+    margin-bottom: 16px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
+  }
+
+  .clients-subtitle {
+    font-size: 18px;
+    color: var(--slate-400);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 32px;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.client-card {
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  border-radius: 20px;
+  padding: 32px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.client-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .client-logo {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+    color: var(--navy-800);
+    margin-bottom: 4px;
+  }
+
+  .client-location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: var(--slate-400);
+  }
+
+  .client-website {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: var(--green-500);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--green-600);
+    }
+  }
+}
+
+.client-desc {
+  font-size: 15px;
+  color: var(--slate-500);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.client-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.service-tag {
+  padding: 6px 14px;
+  background: var(--slate-50);
+  border: 1px solid var(--slate-200);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--slate-600);
+  font-weight: 500;
+}
+
+.clients-cta {
+  text-align: center;
+  margin-top: 64px;
+  padding: 48px;
+  background: var(--white);
+  border: 1px solid var(--slate-200);
+  border-radius: 20px;
+
+  p {
+    font-size: 18px;
+    color: var(--slate-500);
+    margin-bottom: 24px;
+  }
+
+  .btn-primary {
+    text-decoration: none;
+  }
+}

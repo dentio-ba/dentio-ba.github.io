@@ -1,0 +1,49 @@
+<section class="clients-hero section-dark">
+  <div class="container">
+    <h1>{{ ts.t('clients.title') }}</h1>
+    <p class="clients-subtitle">{{ ts.t('clients.subtitle') }}</p>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div class="clients-grid">
+      @for (client of clients; track client.name) {
+        <div class="client-card">
+          <div class="client-header">
+            <div class="client-logo">
+              <img [src]="client.logo" [alt]="client.name">
+            </div>
+            <div>
+              <h3>{{ client.name }}</h3>
+              <span class="client-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                {{ client.location }}
+              </span>
+              @if (client.website) {
+                <a class="client-website" [href]="'https://' + client.website" target="_blank" rel="noopener">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  {{ client.website }}
+                </a>
+              }
+            </div>
+          </div>
+          <p class="client-desc">{{ ts.lang() === 'bs' ? client.desc.bs : client.desc.en }}</p>
+          <div class="client-services">
+            @for (service of client.services; track service) {
+              <span class="service-tag">{{ service }}</span>
+            }
+          </div>
+        </div>
+      }
+    </div>
+
+    <div class="clients-cta">
+      <p>{{ ts.t('clients.cta') }}</p>
+      <a routerLink="/contact" class="btn-primary">
+        {{ ts.t('clients.ctaBtn') }}
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>

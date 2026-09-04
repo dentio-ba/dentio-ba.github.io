@@ -1,0 +1,37 @@
+<nav [class.scrolled]="scrolled()" [class.solid]="solid">
+  <div class="nav-inner">
+    <a class="logo" routerLink="/home" (click)="closeMobile()">
+      <span class="logo-icon">
+        <img src="favicon-icon.svg" alt="Dentify" width="28" height="28">
+      </span>
+      <span class="logo-text">Dent<span class="logo-accent">ify</span></span>
+    </a>
+
+    <div class="nav-links" [class.mobile-open]="mobileOpen()">
+      <a routerLink="/home" routerLinkActive="active" (click)="closeMobile()">{{ ts.t('nav.home') }}</a>
+      <a routerLink="/solutions" routerLinkActive="active" (click)="closeMobile()">{{ ts.t('nav.solutions') }}</a>
+      <a routerLink="/clients" routerLinkActive="active" (click)="closeMobile()">{{ ts.t('nav.clients') }}</a>
+      <a routerLink="/contact" routerLinkActive="active" (click)="closeMobile()">{{ ts.t('nav.contact') }}</a>
+    </div>
+
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button class="lang-btn" [class.active]="ts.lang() === 'en'" (click)="ts.setLang('en')">
+          <img src="flags/gb.svg" alt="English" class="lang-flag-img">
+          <span>EN</span>
+        </button>
+        <span class="lang-divider">/</span>
+        <button class="lang-btn" [class.active]="ts.lang() === 'bs'" (click)="ts.setLang('bs')">
+          <img src="flags/ba.webp" alt="Bosanski" class="lang-flag-img">
+          <span>BS</span>
+        </button>
+      </div>
+
+      <button class="hamburger" [class.active]="mobileOpen()" (click)="toggleMobile()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</nav>

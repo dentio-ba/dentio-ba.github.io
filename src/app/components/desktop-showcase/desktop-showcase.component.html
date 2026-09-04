@@ -1,0 +1,81 @@
+<section id="desktop" class="section section-dark">
+  <div class="container">
+    <div class="showcase-layout">
+      <div class="showcase-content">
+        <div class="showcase-label">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span>Desktop</span>
+        </div>
+        <h2>{{ ts.t('desktop.title') }}</h2>
+        <p class="showcase-desc">{{ ts.t('desktop.subtitle') }}</p>
+
+        <div class="showcase-features">
+          @for (f of features; track f.key) {
+            <div class="showcase-feature">
+              <div class="sf-icon">
+                @switch (f.icon) {
+                  @case ('cards') {
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                  }
+                  @case ('doctors') {
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  }
+                  @case ('services') {
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                  }
+                  @case ('offline') {
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"/><line x1="12" y1="2" x2="12" y2="12"/></svg>
+                  }
+                }
+              </div>
+              <div>
+                <h4>{{ ts.t('desktop.' + f.key + '.title') }}</h4>
+                <p>{{ ts.t('desktop.' + f.key + '.desc') }}</p>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+
+      <div class="showcase-visual">
+        <div class="app-window">
+          <div class="window-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <span class="window-title">Dentify Desktop</span>
+          </div>
+          <div class="window-body">
+            <div class="mock-sidebar">
+              <div class="mock-nav-item active"></div>
+              <div class="mock-nav-item"></div>
+              <div class="mock-nav-item"></div>
+              <div class="mock-nav-item"></div>
+              <div class="mock-nav-item"></div>
+            </div>
+            <div class="mock-content">
+              <div class="mock-header-bar"></div>
+              <div class="mock-cards">
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+                <div class="mock-card"></div>
+              </div>
+              <div class="mock-table">
+                <div class="mock-row"></div>
+                <div class="mock-row"></div>
+                <div class="mock-row"></div>
+                <div class="mock-row"></div>
+              </div>
+            </div>
+          </div>
+          <div class="screenshot-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Screenshot</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
