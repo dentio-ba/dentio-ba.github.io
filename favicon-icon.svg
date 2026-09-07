@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Tooth body - green -->
+  <path d="
+    M13,22
+    C11,13 14,5 22,5
+    C26,5 29,7 32,7
+    C35,7 38,5 42,5
+    C50,5 53,13 51,22
+    C49,30 47,39 45,47
+    C43,54 41,60 37,60
+    C35,60 34,56 32,50
+    C30,56 29,60 27,60
+    C23,60 21,54 19,47
+    C17,39 15,30 13,22 Z
+  " fill="#10B981"/>
+  <!-- White inner accent -->
+  <path d="M32,7 C34,16 37,28 33,42" stroke="#fff" stroke-width="4.5" fill="none" stroke-linecap="round"/>
+  <path d="M22,7 C20,14 18,22 19,32" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+</svg>

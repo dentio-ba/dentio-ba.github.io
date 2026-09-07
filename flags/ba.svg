@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <clipPath id="flag"><rect width="800" height="400"/></clipPath>
+  </defs>
+  <g clip-path="url(#flag)">
+    <!-- Blue background -->
+    <rect width="800" height="400" fill="#002395"/>
+    <!-- Yellow triangle: narrower left blue strip -->
+    <polygon points="133,0 667,0 667,400" fill="#FECB00"/>
+    <!-- White 5-pointed stars along the hypotenuse -->
+    <!-- Hypotenuse goes from (133,0) to (667,400) -->
+    <!-- Stars centered on this line, evenly spaced -->
+    <g fill="#FFF">
+      <!-- Each star centered on the diagonal line -->
+      <!-- Point along line: x = 133 + t*534, y = t*400 for t from ~0.04 to ~0.96 -->
+      <polygon points="157,10 161,22 174,22 164,30 167,42 157,34 147,42 150,30 140,22 153,22" />
+      <polygon points="210,52 214,64 227,64 217,72 220,84 210,76 200,84 203,72 193,64 206,64" />
+      <polygon points="264,100 268,112 281,112 271,120 274,132 264,124 254,132 257,120 247,112 260,112" />
+      <polygon points="317,148 321,160 334,160 324,168 327,180 317,172 307,180 310,168 300,160 313,160" />
+      <polygon points="370,196 374,208 387,208 377,216 380,228 370,220 360,228 363,216 353,208 366,208" />
+      <polygon points="424,248 428,260 441,260 431,268 434,280 424,272 414,280 417,268 407,260 420,260" />
+      <polygon points="477,296 481,308 494,308 484,316 487,328 477,320 467,328 470,316 460,308 473,308" />
+      <polygon points="530,344 534,356 547,356 537,364 540,376 530,368 520,376 523,364 513,356 526,356" />
+      <polygon points="584,392 588,404 601,404 591,412 594,424 584,416 574,424 577,412 567,404 580,404" />
+      <!-- Half star at top (clipped) -->
+      <polygon points="104,-30 108,-18 121,-18 111,-10 114,2 104,-6 94,2 97,-10 87,-18 100,-18" />
+      <!-- Half star at bottom (clipped) -->
+      <polygon points="637,430 641,442 654,442 644,450 647,462 637,454 627,462 630,450 620,442 633,442" />
+    </g>
+  </g>
+</svg>
