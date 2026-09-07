@@ -129,82 +129,9 @@ h2 {
 }
 
 .window-body {
-  display: flex;
-  min-height: 300px;
-}
-
-.mock-sidebar {
-  width: 60px;
-  background: rgba(0,0,0,0.15);
-  padding: 16px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  border-right: 1px solid rgba(255,255,255,0.05);
-
-  .mock-nav-item {
-    height: 32px;
-    border-radius: 8px;
-    background: rgba(255,255,255,0.05);
-
-    &.active {
-      background: var(--green-500);
-      opacity: 0.6;
-    }
+  .desktop-screenshot {
+    width: 100%;
+    height: auto;
+    display: block;
   }
-}
-
-.mock-content {
-  flex: 1;
-  padding: 16px;
-}
-
-.mock-header-bar {
-  height: 32px;
-  background: rgba(255,255,255,0.05);
-  border-radius: 8px;
-  margin-bottom: 16px;
-}
-
-.mock-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-bottom: 16px;
-
-  .mock-card {
-    height: 60px;
-    background: rgba(255,255,255,0.05);
-    border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.05);
-  }
-}
-
-.mock-table {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  .mock-row {
-    height: 28px;
-    background: rgba(255,255,255,0.03);
-    border-radius: 6px;
-
-    &:nth-child(odd) {
-      background: rgba(255,255,255,0.06);
-    }
-  }
-}
-
-.screenshot-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 32px;
-  color: var(--slate-500);
-  font-size: 13px;
-  font-weight: 500;
-  border-top: 1px solid rgba(255,255,255,0.05);
 }

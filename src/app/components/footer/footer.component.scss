@@ -29,6 +29,9 @@ footer {
     font-size: 20px;
     font-weight: 800;
     margin-bottom: 16px;
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
 
     .logo-icon {
       display: flex;
@@ -53,6 +56,11 @@ footer {
     color: var(--slate-400);
     line-height: 1.7;
     max-width: 300px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--green-400);
+    }
   }
 }
 

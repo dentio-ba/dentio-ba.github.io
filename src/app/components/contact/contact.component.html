@@ -21,7 +21,7 @@
             </div>
             <div>
               <span class="ci-label">Telefon</span>
-              <span class="ci-value">+387 33 123 456</span>
+              <span class="ci-value">+387 62 156 078</span>
             </div>
           </div>
           <div class="contact-item">
@@ -45,23 +45,56 @@
           </div>
         } @else {
           <form (ngSubmit)="onSubmit()">
+            <div class="form-row">
+              <div class="form-group">
+                <label>{{ ts.t('contact.firstName') }}</label>
+                <input type="text" [(ngModel)]="form.firstName" name="firstName"
+                  [class.invalid]="formSubmitted && !form.firstName">
+                @if (formSubmitted && !form.firstName) {
+                  <span class="field-error">{{ ts.t('contact.required') }}</span>
+                }
+              </div>
+              <div class="form-group">
+                <label>{{ ts.t('contact.lastName') }}</label>
+                <input type="text" [(ngModel)]="form.lastName" name="lastName"
+                  [class.invalid]="formSubmitted && !form.lastName">
+                @if (formSubmitted && !form.lastName) {
+                  <span class="field-error">{{ ts.t('contact.required') }}</span>
+                }
+              </div>
+            </div>
             <div class="form-group">
-              <label>{{ ts.t('contact.name') }}</label>
-              <input type="text" [(ngModel)]="form.name" name="name" required>
+              <label>{{ ts.t('contact.phone') }}</label>
+              <input type="tel" [(ngModel)]="form.phone" name="phone" maxlength="15"
+                [class.invalid]="formSubmitted && (!form.phone || (form.phone && !phoneValid))">
+              @if (formSubmitted && !form.phone) {
+                <span class="field-error">{{ ts.t('contact.required') }}</span>
+              } @else if (formSubmitted && form.phone && !phoneValid) {
+                <span class="field-error">{{ ts.t('contact.phoneError') }}</span>
+              }
             </div>
             <div class="form-group">
               <label>{{ ts.t('contact.email') }}</label>
-              <input type="email" [(ngModel)]="form.email" name="email" required>
-            </div>
-            <div class="form-group">
-              <label>{{ ts.t('contact.clinic') }}</label>
-              <input type="text" [(ngModel)]="form.clinic" name="clinic">
+              <input type="email" [(ngModel)]="form.email" name="email"
+                [class.invalid]="formSubmitted && (!form.email || (form.email && !emailValid))">
+              @if (formSubmitted && !form.email) {
+                <span class="field-error">{{ ts.t('contact.required') }}</span>
+              } @else if (formSubmitted && form.email && !emailValid) {
+                <span class="field-error">{{ ts.t('contact.emailError') }}</span>
+              }
             </div>
             <div class="form-group">
               <label>{{ ts.t('contact.message') }}</label>
-              <textarea [(ngModel)]="form.message" name="message" rows="4" required></textarea>
+              <textarea [(ngModel)]="form.message" name="message" rows="4"></textarea>
             </div>
-            <button type="submit" class="btn-primary btn-full">
+            <label class="gdpr" [class.invalid]="formSubmitted && !gdprAccepted">
+              <input type="checkbox" [(ngModel)]="gdprAccepted" name="gdpr" />
+              <span>{{ ts.t('contact.gdpr1') }} <a class="privacy-link" (click)="showPrivacy = true; $event.preventDefault()">{{ ts.t('contact.gdpr2') }}</a> {{ ts.t('contact.gdpr3') }}</span>
+            </label>
+            @if (formSubmitted && !gdprAccepted) {
+              <span class="field-error gdpr-error">{{ ts.t('contact.gdprError') }}</span>
+            }
+            <button type="submit" class="btn-primary btn-full" [disabled]="!gdprAccepted">
               {{ ts.t('contact.send') }}
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
             </button>
@@ -70,4 +103,23 @@
       </div>
     </div>
   </div>
+
+  @if (showPrivacy) {
+    <div class="privacy-overlay" (click)="showPrivacy = false">
+      <div class="privacy-modal" (click)="$event.stopPropagation()">
+        <button class="privacy-close" (click)="showPrivacy = false">&times;</button>
+        <div class="privacy-body">
+          <h2>{{ ts.t('privacy.title') }}</h2>
+          <p>{{ ts.t('privacy.p1') }}</p>
+
+          <h2>{{ ts.t('privacy.gdprTitle') }}</h2>
+          <p>{{ ts.t('privacy.p2') }}</p>
+
+          <p>{{ ts.t('privacy.p3') }}</p>
+
+          <button class="privacy-accept-btn" (click)="acceptPrivacy()">{{ ts.t('privacy.accept') }}</button>
+        </div>
+      </div>
+    </div>
+  }
 </section>

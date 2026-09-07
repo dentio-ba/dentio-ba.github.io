@@ -5,6 +5,10 @@
   margin-bottom: 64px;
   letter-spacing: -1px;
 
+  .green {
+    color: var(--green-400);
+  }
+
   @media (max-width: 768px) {
     font-size: 32px;
     margin-bottom: 40px;
@@ -13,11 +17,12 @@
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 24px;
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
   }
 
   @media (max-width: 640px) {

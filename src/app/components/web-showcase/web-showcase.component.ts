@@ -14,7 +14,7 @@ export class WebShowcaseComponent {
   features = [
     { key: 'feature1', icon: 'wizard' },
     { key: 'feature2', icon: 'list' },
-    { key: 'feature3', icon: 'team' },
+    { key: 'feature3', icon: 'responsive' },
     { key: 'feature4', icon: 'form' },
   ];
 }

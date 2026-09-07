@@ -12,8 +12,7 @@ export class StatsComponent {
   ts = inject(TranslateService);
 
   stats = [
-    { value: '2+', key: 'years' },
-    { value: '10,000+', key: 'patients' },
+{ value: '10,000+', key: 'patients' },
     { value: '50,000+', key: 'appointments' },
     { value: '60+', key: 'services' },
     { value: '99.9%', key: 'uptime' },
