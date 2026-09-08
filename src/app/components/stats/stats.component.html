@@ -2,9 +2,9 @@
   <div class="container">
     <h2 class="stats-title">Dent<span class="green">io</span> {{ ts.t('stats.title') }}</h2>
     <div class="stats-grid">
-      @for (s of stats; track s.key) {
+      @for (s of stats; track s.key; let i = $index) {
         <div class="stat-card">
-          <div class="stat-value">{{ s.value }}</div>
+          <div class="stat-value">{{ counters[i]() }}</div>
           <div class="stat-label">{{ ts.t('stats.' + s.key) }}</div>
         </div>
       }

@@ -181,6 +181,17 @@
   font-weight: 500;
 }
 
+.error-message {
+  background: rgba(239, 68, 68, 0.08);
+  color: #ef4444;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
 .btn-full {
   width: 100%;
   justify-content: center;
