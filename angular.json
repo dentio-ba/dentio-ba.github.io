@@ -60,6 +60,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/",
               "sourceMap": false,
               "namedChunks": false,
               "budgets": [
@@ -121,7 +122,10 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "subDir": "browser"
+          }
         }
       }
     }
