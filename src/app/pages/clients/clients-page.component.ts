@@ -21,5 +21,13 @@ export class ClientsPageComponent {
       desc: { bs: 'Stomatološka ordinacija sa kompletnim desktop i web rješenjem za upravljanje pacijentima, terminima i tretmanima.', en: 'Dental practice with a complete desktop and web solution for managing patients, appointments and treatments.' },
       services: ['Desktop App', 'Web App', 'Cloud Sync', 'Email System'],
     },
+    {
+      name: 'SS Dental',
+      location: 'Konjic, BiH',
+      logo: 'clients/ssdental-logo.png',
+      website: 'www.ssdental.ba',
+      desc: { bs: 'Stomatološka ordinacija sa web platformom, email sistemom i cloud sinhronizacijom za efikasno upravljanje ordinacijom.', en: 'Dental practice with a web platform, email system and cloud sync for efficient clinic management.' },
+      services: ['Web App', 'Email System', 'Cloud Sync'],
+    },
   ];
 }
