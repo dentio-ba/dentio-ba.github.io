@@ -1,6 +1,6 @@
 <nav [class.scrolled]="scrolled()" [class.solid]="solid">
   <div class="nav-inner">
-    <a class="logo" routerLink="/home" (click)="closeMobile()">
+    <a class="logo" routerLink="/" (click)="closeMobile()">
       <img src="dentio-logo.png" alt="Dentio" class="logo-img">
       <!-- <span class="logo-icon">
         <img src="favicon-icon.svg" alt="Dentio" width="28" height="28">
@@ -9,7 +9,7 @@
     </a>
 
     <div class="nav-links" [class.mobile-open]="mobileOpen()">
-      <a routerLink="/home" routerLinkActive="active" (click)="closeMobile()">{{ ts.t('nav.home') }}</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMobile()">{{ ts.t('nav.home') }}</a>
       <a routerLink="/solutions" routerLinkActive="active" (click)="closeMobile()">{{ ts.t('nav.solutions') }}</a>
       <a routerLink="/clients" routerLinkActive="active" (click)="closeMobile()">{{ ts.t('nav.clients') }}</a>
       <a routerLink="/contact" routerLinkActive="active" (click)="closeMobile()">{{ ts.t('nav.contact') }}</a>
