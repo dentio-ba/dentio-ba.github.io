@@ -33,6 +33,7 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
 }
 
 body {
@@ -133,6 +134,14 @@ img {
     border-color: var(--green-400);
     color: var(--green-400);
     transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 400px) {
+  .btn-primary,
+  .btn-outline {
+    padding: 12px 24px;
+    font-size: 14px;
   }
 }
 

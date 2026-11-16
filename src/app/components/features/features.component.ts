@@ -20,5 +20,9 @@ export class FeaturesComponent {
     { key: 'email', icon: 'email' },
     { key: 'treatments', icon: 'treatment' },
     { key: 'security', icon: 'security' },
+    { key: 'reports', icon: 'reports' },
+    { key: 'admin', icon: 'admin' },
+    { key: 'appointments', icon: 'appointments' },
+    { key: 'documents', icon: 'documents' },
   ];
 }

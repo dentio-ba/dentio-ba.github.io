@@ -28,6 +28,11 @@
   @media (max-width: 640px) {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  @media (max-width: 360px) {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
 }
 
 .stat-card {
@@ -37,6 +42,21 @@
   border: 1px solid rgba(255,255,255,0.1);
   border-radius: 16px;
   transition: all 0.3s;
+  width: 100%;
+
+  @media (max-width: 400px) {
+    padding: 20px 10px;
+    border-radius: 12px;
+
+    .stat-value {
+      font-size: 22px;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      letter-spacing: 0.5px;
+    }
+  }
 
   &:hover {
     background: rgba(255,255,255,0.08);

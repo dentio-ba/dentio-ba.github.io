@@ -47,8 +47,21 @@ nav {
     }
   }
 
+  .logo-img {
+    height: 36px;
+    width: auto;
+
+    @media (max-width: 400px) {
+      height: 28px;
+    }
+  }
+
   .logo-accent {
     color: var(--green-400);
+  }
+
+  @media (max-width: 400px) {
+    .logo-text { display: none; }
   }
 }
 
