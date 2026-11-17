@@ -1,16 +1,14 @@
-import { Component, inject } from '@angular/core';
-import { TranslateService } from '../../services/translate.service';
+import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-features',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './features.component.html',
   styleUrl: './features.component.scss'
 })
 export class FeaturesComponent {
-  ts = inject(TranslateService);
-
   features = [
     { key: 'patients', icon: 'people' },
     { key: 'odontogram', icon: 'tooth' },

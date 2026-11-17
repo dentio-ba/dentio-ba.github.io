@@ -1,18 +1,16 @@
-import { Component, inject } from '@angular/core';
-import { TranslateService } from '../../services/translate.service';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslatePipe } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, TranslatePipe],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-  ts = inject(TranslateService);
-
   form = {
     firstName: '',
     lastName: '',

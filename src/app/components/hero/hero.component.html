@@ -7,17 +7,17 @@
   <div class="container hero-content">
     <div class="hero-badge">
       <span class="badge-dot"></span>
-      <span>{{ ts.lang() === 'bs' ? 'Prilagođena Desktop + Web Rješenja' : 'Custom Desktop + Web Solutions' }}</span>
+      <span>{{ 'hero.badge' | translate }}</span>
     </div>
-    <h1>{{ ts.t('hero.title') }}</h1>
-    <p class="hero-subtitle">{{ ts.t('hero.subtitle') }}</p>
+    <h1>{{ 'hero.title' | translate }}</h1>
+    <p class="hero-subtitle">{{ 'hero.subtitle' | translate }}</p>
     <div class="hero-actions">
       <a class="btn-primary" routerLink="/contact">
-        {{ ts.t('hero.cta') }}
+        {{ 'hero.cta' | translate }}
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
       <a class="btn-outline" routerLink="/solutions">
-        {{ ts.t('hero.demo') }}
+        {{ 'hero.demo' | translate }}
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
       </a>
     </div>

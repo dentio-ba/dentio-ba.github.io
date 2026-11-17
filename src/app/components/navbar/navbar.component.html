@@ -9,20 +9,20 @@
     </a>
 
     <div class="nav-links" [class.mobile-open]="mobileOpen()">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMobile()">{{ ts.t('nav.home') }}</a>
-      <a routerLink="/solutions" routerLinkActive="active" (click)="closeMobile()">{{ ts.t('nav.solutions') }}</a>
-      <a routerLink="/clients" routerLinkActive="active" (click)="closeMobile()">{{ ts.t('nav.clients') }}</a>
-      <a routerLink="/contact" routerLinkActive="active" (click)="closeMobile()">{{ ts.t('nav.contact') }}</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" (click)="closeMobile()">{{ 'nav.home' | translate }}</a>
+      <a routerLink="/solutions" routerLinkActive="active" (click)="closeMobile()">{{ 'nav.solutions' | translate }}</a>
+      <a routerLink="/clients" routerLinkActive="active" (click)="closeMobile()">{{ 'nav.clients' | translate }}</a>
+      <a routerLink="/contact" routerLinkActive="active" (click)="closeMobile()">{{ 'nav.contact' | translate }}</a>
     </div>
 
     <div class="nav-actions">
       <div class="lang-switch">
-        <button class="lang-btn" [class.active]="ts.lang() === 'en'" (click)="ts.setLang('en')">
+        <button class="lang-btn" [class.active]="lang.currentLang === 'en'" (click)="lang.setLang('en')">
           <img src="flags/gb.svg" alt="English" class="lang-flag-img">
           <span>EN</span>
         </button>
         <span class="lang-divider">/</span>
-        <button class="lang-btn" [class.active]="ts.lang() === 'bs'" (click)="ts.setLang('bs')">
+        <button class="lang-btn" [class.active]="lang.currentLang === 'bs'" (click)="lang.setLang('bs')">
           <img src="flags/ba.webp" alt="Bosanski" class="lang-flag-img">
           <span>BS</span>
         </button>

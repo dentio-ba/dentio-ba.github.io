@@ -1,24 +1,22 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { TranslateService } from '../../services/translate.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-clients-page',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe],
   templateUrl: './clients-page.component.html',
   styleUrl: './clients-page.component.scss',
 })
 export class ClientsPageComponent {
-  ts = inject(TranslateService);
-
   clients = [
     {
       name: 'Medico',
       location: 'Sarajevo, BiH',
       logo: 'clients/medico-logo.png',
       website: 'www.medico.ba',
-      desc: { bs: 'Stomatološka ordinacija sa kompletnim desktop i web rješenjem za upravljanje pacijentima, terminima i tretmanima.', en: 'Dental practice with a complete desktop and web solution for managing patients, appointments and treatments.' },
+      descKey: 'clients.medico_desc',
       services: ['Desktop App', 'Web App', 'Cloud Sync', 'Email System'],
     },
     {
@@ -26,7 +24,7 @@ export class ClientsPageComponent {
       location: 'Konjic, BiH',
       logo: 'clients/ssdental-logo.png',
       website: 'www.ssdental.ba',
-      desc: { bs: 'Stomatološka ordinacija sa web platformom, email sistemom i cloud sinhronizacijom za efikasno upravljanje ordinacijom.', en: 'Dental practice with a web platform, email system and cloud sync for efficient clinic management.' },
+      descKey: 'clients.ssdental_desc',
       services: ['Web App', 'Email System', 'Cloud Sync'],
     },
   ];

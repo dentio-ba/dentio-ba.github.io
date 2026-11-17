@@ -1,16 +1,14 @@
-import { Component, inject } from '@angular/core';
-import { TranslateService } from '../../services/translate.service';
+import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-web-showcase',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './web-showcase.component.html',
   styleUrl: './web-showcase.component.scss'
 })
 export class WebShowcaseComponent {
-  ts = inject(TranslateService);
-
   features = [
     { key: 'feature1', icon: 'wizard' },
     { key: 'feature2', icon: 'list' },

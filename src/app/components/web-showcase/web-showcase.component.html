@@ -10,8 +10,8 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           <span>Web</span>
         </div>
-        <h2>{{ ts.t('web.title') }}</h2>
-        <p class="showcase-desc">{{ ts.t('web.subtitle') }}</p>
+        <h2>{{ 'web.title' | translate }}</h2>
+        <p class="showcase-desc">{{ 'web.subtitle' | translate }}</p>
 
         <div class="showcase-features">
           @for (f of features; track f.key) {
@@ -33,8 +33,8 @@
                 }
               </div>
               <div>
-                <h4>{{ ts.t('web.' + f.key + '.title') }}</h4>
-                <p>{{ ts.t('web.' + f.key + '.desc') }}</p>
+                <h4>{{ 'web.' + f.key + '.title' | translate }}</h4>
+                <p>{{ 'web.' + f.key + '.desc' | translate }}</p>
               </div>
             </div>
           }

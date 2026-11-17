@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "home": "Početna",
+    "solutions": "Rješenja",
+    "clients": "Klijenti",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "badge": "Prilagođena Desktop + Web Rješenja",
+    "title": "Prilagodljiva Desktop i Web rješenja za Vašu ordinaciju",
+    "subtitle": "Svaka ordinacija je jedinstvena. Mi prvo slušamo Vaše potrebe, a zatim kreiramo prilagođenu desktop aplikaciju i web platformu koje savršeno odgovaraju Vašem načinu rada — od zakazivanja termina do upravljanja pacijentima.",
+    "cta": "Kontaktirajte Nas",
+    "demo": "Pogledajte Demo"
+  },
+  "features": {
+    "title": "Sve što Vam treba",
+    "subtitle": "Svaki modul se prilagođava Vašim potrebama — recite nam šta Vam treba, a mi ćemo to izgraditi.",
+    "patients": {
+      "title": "Upravljanje pacijentima",
+      "desc": "Kompletna evidencija pacijenata sa pretragom, filterima, alergijama, historijom tretmana i detaljnim kartonima."
+    },
+    "odontogram": {
+      "title": "Interaktivni odontogram",
+      "desc": "Vizualni prikaz stanja zuba sa podrškom za površine, mostove, protetiku, ekstrakcije i impaktirane zube."
+    },
+    "calendar": {
+      "title": "Kalendar termina",
+      "desc": "Sedmični kalendar sa drag-and-drop terminima, multi-slot zakazivanjem i automatskim email potvrdama."
+    },
+    "booking": {
+      "title": "Online zakazivanje",
+      "desc": "Web wizard omogućava pacijentima da sami zakazuju termine po kategorijama usluga, sa izborom doktora i vremena."
+    },
+    "sync": {
+      "title": "Cloud sinhronizacija",
+      "desc": "Sinhronizacija u realnom vremenu između desktop i web aplikacije sa offline podrškom i automatskim retry-jem."
+    },
+    "email": {
+      "title": "Email obavještenja",
+      "desc": "Automatske potvrde termina, čestitke za rođendane, prazničke poruke i prilagodljivi email šabloni."
+    },
+    "treatments": {
+      "title": "Evidencija tretmana",
+      "desc": "Multi-servisni tretmani sa bilješkama, inicijalnom procjenom, historijom po zubu i statusom završenosti."
+    },
+    "security": {
+      "title": "Sigurnost i logovanje",
+      "desc": "Enkripcija podataka, rate limiting, CORS politike i sigurnosni headeri za maksimalnu zaštitu korisničkih informacija."
+    },
+    "reports": {
+      "title": "Izvještaji",
+      "desc": "Detaljni izvještaji o prihodima, broju pacijenata, tretmanima po doktoru i periodu — sve statistike na jednom mjestu za bolji uvid u poslovanje."
+    },
+    "admin": {
+      "title": "Administracija",
+      "desc": "Potpuna kontrola nad postavkama ordinacije — raspored doktora, radna vremena, kategorije usluga, cjenovnik i korisničke uloge prilagođene Vašim potrebama."
+    },
+    "appointments": {
+      "title": "Prihvatanje online termina",
+      "desc": "Primajte i upravljajte online zakazanim terminima direktno iz desktop ili mobilne aplikacije — odobravajte, odbijajte ili premještajte termine u par klikova."
+    },
+    "documents": {
+      "title": "Dokumenti pacijenata",
+      "desc": "Svi dokumenti pacijenta na jednom mjestu — slike zuba, RTG snimci, PDF nalozi, uputnice i ostala dokumentacija vezana za tretmane."
+    }
+  },
+  "desktop": {
+    "title": "Desktop aplikacija",
+    "subtitle": "Prilagodljiva desktop aplikacija kreirana prema Vašim zahtjevima — od interfejsa do funkcionalnosti, sve se prilagođava Vašem radnom procesu.",
+    "feature1": {
+      "title": "Kartoni pacijenata",
+      "desc": "Detaljan pregled svakog pacijenta sa tabovima za termine, tretmane, odontogram, napomene i korespondenciju."
+    },
+    "feature2": {
+      "title": "Upravljanje doktorima",
+      "desc": "Raspored rada doktora, boje kalendara, aktivni/neaktivni status i automatsko dodjeljivanje tretmana."
+    },
+    "feature3": {
+      "title": "Administracija usluga",
+      "desc": "Kategorije usluga sa bojama, cijenama, trajanjem i podrškom za specijalne odontogram oblike."
+    },
+    "feature4": {
+      "title": "Offline mod",
+      "desc": "Aplikacija radi i bez interneta — podaci se sinhronizuju automatski kada se veza uspostavi."
+    }
+  },
+  "web": {
+    "title": "Web aplikacija",
+    "subtitle": "Web aplikacija dizajnirana po Vašoj mjeri — Vi definišete funkcionalnosti, a mi ih implementiramo sa modernim tehnologijama.",
+    "feature1": {
+      "title": "Wizard za zakazivanje",
+      "desc": "Intuitivni korak-po-korak proces: odaberite kategoriju, uslugu, doktora, datum i vrijeme — sve u par klikova."
+    },
+    "feature2": {
+      "title": "Stranica usluga",
+      "desc": "Pregled svih usluga po kategorijama sa detaljnim opisima, cijenama i mogućnošću direktnog zakazivanja."
+    },
+    "feature3": {
+      "title": "Responzivni dizajn",
+      "desc": "Optimiziran prikaz za sve uređaje — desktop, tablet i mobilni telefon sa konzistentnim korisničkim iskustvom."
+    },
+    "feature4": {
+      "title": "Kontakt forma",
+      "desc": "Direktna komunikacija sa ordinacijom putem kontakt forme sa email notifikacijama i validacijom."
+    }
+  },
+  "stats": {
+    "title": "u brojkama",
+    "patients": "Pacijenata u sistemu",
+    "appointments": "Zakazanih termina",
+    "services": "Stomatoloških usluga",
+    "uptime": "Uptime dostupnost",
+    "sync": "Cloud sinhronizacija"
+  },
+  "contact": {
+    "title": "Zainteresirani?",
+    "subtitle": "Opišite nam svoju viziju — zakazat ćemo besplatnu konsultaciju i pripremiti prijedlog prilagođen Vašim potrebama.",
+    "first_name": "Ime",
+    "last_name": "Prezime",
+    "phone": "Broj telefona",
+    "email": "Email adresa",
+    "message": "Poruka (opciono)",
+    "send": "Pošaljite upit",
+    "required": "Ovo polje je obavezno",
+    "phone_error": "Unesite ispravan broj telefona",
+    "email_error": "Unesite ispravnu email adresu",
+    "gdpr1": "Slažem se sa",
+    "gdpr2": "politikom privatnosti",
+    "gdpr3": "i zaštitom podataka",
+    "gdpr_error": "Morate prihvatiti politiku privatnosti da biste nastavili",
+    "or": "ili nas kontaktirajte direktno",
+    "success_title": "Hvala!",
+    "success_message": "Javit ćemo Vam se uskoro.",
+    "sending": "Slanje...",
+    "send_error": "Greška pri slanju. Pokušajte ponovo.",
+    "label_phone": "Telefon",
+    "label_location": "Lokacija"
+  },
+  "privacy": {
+    "title": "Zaštita podataka",
+    "p1": "Osobni podaci navedeni na prezentaciji koristit će se strogo u skladu s odredbama zakona o zaštiti podataka EU-a. Osobni podaci se prikupljaju dobrovoljno te se koriste za konzultacije, oglašavanje i marketing samo uz izričit pristanak. Napominjemo da ova web stranica ne pohranjuje Vaše podatke u digitalnom obliku na web poslužiteljima.",
+    "gdpr_title": "GDPR – Uredba EU 2016/679",
+    "p2": "Dana 25. maja 2016. u skladu s Uredbom (EUROPSKOG PARLAMENTA I VIJEĆA) br. 2016/679 o zaštiti pojedinaca u pogledu obrade osobnih podataka i o slobodnom kretanju takvih podataka te o stavljanju izvan snage Direktive 95/46/EZ (Opća uredba o zaštiti podataka), Privatna firma za izradu softverskih rješenja Dentio dužna je obavijestiti sve korisnike web stranice o prikupljanju, pohrani i obradi osobnih podataka.",
+    "p3": "Korisnici koji nas kontaktiraju putem kontakt forme na web stranici daju nam pravo na pohranu osobnih podataka (ime, prezime, broj telefona i e-mail adresa) isključivo u svrhu odgovaranja na upite i pružanja traženih informacija. Ovi podaci se ne prenose trećim stranama niti se koriste u komercijalne svrhe bez izričitog pristanka korisnika. Korisnici imaju pravo uvida, ispravka i brisanja svojih osobnih podataka u skladu s važećim propisima.",
+    "accept": "Prihvati"
+  },
+  "clients": {
+    "title": "Naši Klijenti",
+    "subtitle": "Ordinacije koje koriste Dentio sistem za upravljanje svojom ordinacijom.",
+    "cta": "Želite li da Vaša ordinacija bude sljedeća?",
+    "cta_btn": "Kontaktirajte Nas",
+    "medico_desc": "Stomatološka ordinacija sa kompletnim desktop i web rješenjem za upravljanje pacijentima, terminima i tretmanima.",
+    "ssdental_desc": "Stomatološka ordinacija sa web platformom, email sistemom i cloud sinhronizacijom za efikasno upravljanje ordinacijom."
+  },
+  "footer": {
+    "desc": "Prilagodljiva softverska rješenja za stomatološke ordinacije — slušamo Vaše potrebe i kreiramo desktop i web aplikacije po mjeri.",
+    "links": "Brzi Linkovi",
+    "tech": "Tehnologije",
+    "contact": "Kontakt",
+    "rights": "Sva prava zadržana."
+  }
+}

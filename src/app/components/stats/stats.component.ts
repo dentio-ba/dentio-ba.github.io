@@ -1,16 +1,15 @@
-import { Component, inject, signal, AfterViewInit, OnDestroy, NgZone, ElementRef, PLATFORM_ID } from '@angular/core';
+import { Component, signal, AfterViewInit, OnDestroy, NgZone, ElementRef, PLATFORM_ID, inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { TranslateService } from '../../services/translate.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-stats',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './stats.component.html',
   styleUrl: './stats.component.scss'
 })
 export class StatsComponent implements AfterViewInit, OnDestroy {
-  ts = inject(TranslateService);
   private zone = inject(NgZone);
   private el = inject(ElementRef);
   private platformId = inject(PLATFORM_ID);

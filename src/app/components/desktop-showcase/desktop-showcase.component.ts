@@ -1,15 +1,16 @@
 import { Component, inject } from '@angular/core';
-import { TranslateService } from '../../services/translate.service';
+import { TranslatePipe } from '@ngx-translate/core';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-desktop-showcase',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './desktop-showcase.component.html',
   styleUrl: './desktop-showcase.component.scss'
 })
 export class DesktopShowcaseComponent {
-  ts = inject(TranslateService);
+  lang = inject(LanguageService);
 
   features = [
     { key: 'feature1', icon: 'cards' },

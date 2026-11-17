@@ -1,16 +1,17 @@
-import { Component, inject, HostListener, signal, computed } from '@angular/core';
+import { Component, inject, HostListener, signal } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
-import { TranslateService } from '../../services/translate.service';
+import { TranslatePipe } from '@ngx-translate/core';
+import { LanguageService } from '../../services/language.service';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, TranslatePipe],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  ts = inject(TranslateService);
+  lang = inject(LanguageService);
   private router = inject(Router);
   scrolled = signal(false);
   mobileOpen = signal(false);

@@ -1,8 +1,8 @@
 <section id="features" class="section section-light">
   <div class="container">
     <div class="section-header">
-      <h2>{{ ts.t('features.title') }}</h2>
-      <p>{{ ts.t('features.subtitle') }}</p>
+      <h2>{{ 'features.title' | translate }}</h2>
+      <p>{{ 'features.subtitle' | translate }}</p>
     </div>
     <div class="features-grid">
       @for (f of features; track f.key) {
@@ -47,8 +47,8 @@
               }
             }
           </div>
-          <h3>{{ ts.t('features.' + f.key + '.title') }}</h3>
-          <p>{{ ts.t('features.' + f.key + '.desc') }}</p>
+          <h3>{{ 'features.' + f.key + '.title' | translate }}</h3>
+          <p>{{ 'features.' + f.key + '.desc' | translate }}</p>
         </div>
       }
     </div>

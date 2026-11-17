@@ -1,7 +1,7 @@
 <section class="clients-hero section-dark">
   <div class="container">
-    <h1>{{ ts.t('clients.title') }}</h1>
-    <p class="clients-subtitle">{{ ts.t('clients.subtitle') }}</p>
+    <h1>{{ 'clients.title' | translate }}</h1>
+    <p class="clients-subtitle">{{ 'clients.subtitle' | translate }}</p>
   </div>
 </section>
 
@@ -28,7 +28,7 @@
               }
             </div>
           </div>
-          <p class="client-desc">{{ ts.lang() === 'bs' ? client.desc.bs : client.desc.en }}</p>
+          <p class="client-desc">{{ client.descKey | translate }}</p>
           <div class="client-services">
             @for (service of client.services; track service) {
               <span class="service-tag">{{ service }}</span>
@@ -39,9 +39,9 @@
     </div>
 
     <div class="clients-cta">
-      <p>{{ ts.t('clients.cta') }}</p>
+      <p>{{ 'clients.cta' | translate }}</p>
       <a routerLink="/contact" class="btn-primary">
-        {{ ts.t('clients.ctaBtn') }}
+        {{ 'clients.cta_btn' | translate }}
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
       </a>
     </div>

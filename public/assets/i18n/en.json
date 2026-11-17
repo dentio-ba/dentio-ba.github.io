@@ -1,0 +1,162 @@
+{
+  "nav": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "clients": "Clients",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "Custom Desktop + Web Solutions",
+    "title": "Customizable Desktop & Web solutions for Your Clinic",
+    "subtitle": "Every clinic is unique. We listen to your needs first, then build a tailored desktop application and web platform that perfectly fits your workflow — from appointment scheduling to patient management.",
+    "cta": "Get In Touch",
+    "demo": "View Demo"
+  },
+  "features": {
+    "title": "Everything You Need",
+    "subtitle": "Every module adapts to your needs — tell us what you require and we will build it.",
+    "patients": {
+      "title": "Patient Management",
+      "desc": "Complete patient records with search, filters, allergies, treatment history and detailed patient cards."
+    },
+    "odontogram": {
+      "title": "Interactive Odontogram",
+      "desc": "Visual tooth chart supporting surfaces, bridges, prosthetics, extractions and impacted teeth."
+    },
+    "calendar": {
+      "title": "Appointment Calendar",
+      "desc": "Weekly calendar with drag-and-drop appointments, multi-slot booking and automatic email confirmations."
+    },
+    "booking": {
+      "title": "Online Booking",
+      "desc": "Web wizard lets patients self-book appointments by service category, choosing their doctor and preferred time."
+    },
+    "sync": {
+      "title": "Cloud Sync",
+      "desc": "Real-time sync between desktop and web apps with offline support and automatic retry."
+    },
+    "email": {
+      "title": "Email Notifications",
+      "desc": "Automatic appointment confirmations, birthday greetings, holiday messages and customizable email templates."
+    },
+    "treatments": {
+      "title": "Treatment Records",
+      "desc": "Multi-service treatments with notes, initial assessments, per-tooth history and completion status tracking."
+    },
+    "security": {
+      "title": "Security & Logging",
+      "desc": "Data encryption, rate limiting, CORS policies and security headers for maximum protection of user information."
+    },
+    "reports": {
+      "title": "Reports",
+      "desc": "Detailed reports on revenue, patient count, treatments by doctor and period — all statistics in one place for better business insights."
+    },
+    "admin": {
+      "title": "Administration",
+      "desc": "Full control over clinic settings — doctor schedules, working hours, service categories, pricing and user roles tailored to your needs."
+    },
+    "appointments": {
+      "title": "Online Appointment Acceptance",
+      "desc": "Receive and manage online bookings directly from the desktop or mobile app — approve, decline or reschedule appointments in just a few clicks."
+    },
+    "documents": {
+      "title": "Patient Documents",
+      "desc": "All patient documents in one place — tooth images, X-rays, PDF reports, referrals and other treatment-related documentation."
+    }
+  },
+  "desktop": {
+    "title": "Desktop Application",
+    "subtitle": "A customizable desktop application built around your requirements — from the interface to functionality, everything adapts to your workflow.",
+    "feature1": {
+      "title": "Patient Cards",
+      "desc": "Detailed view of each patient with tabs for appointments, treatments, odontogram, notes and correspondence."
+    },
+    "feature2": {
+      "title": "Doctor Management",
+      "desc": "Doctor work schedules, calendar colors, active/inactive status and automatic treatment assignment."
+    },
+    "feature3": {
+      "title": "Service Administration",
+      "desc": "Service categories with colors, pricing, duration and support for special odontogram shapes."
+    },
+    "feature4": {
+      "title": "Offline Mode",
+      "desc": "Application works without internet — data syncs automatically when connection is re-established."
+    }
+  },
+  "web": {
+    "title": "Web Application",
+    "subtitle": "A web application designed to your specification — you define the features and we implement them with modern technologies.",
+    "feature1": {
+      "title": "Booking Wizard",
+      "desc": "Intuitive step-by-step process: choose category, service, doctor, date and time — all in a few clicks."
+    },
+    "feature2": {
+      "title": "Services Page",
+      "desc": "Browse all services by category with detailed descriptions, pricing and direct booking option."
+    },
+    "feature3": {
+      "title": "Responsive Design",
+      "desc": "Optimized layout for all devices — desktop, tablet and mobile with a consistent user experience."
+    },
+    "feature4": {
+      "title": "Contact Form",
+      "desc": "Direct clinic communication through contact form with email notifications and validation."
+    }
+  },
+  "stats": {
+    "title": "in Numbers",
+    "patients": "Patients in System",
+    "appointments": "Appointments Booked",
+    "services": "Dental Services",
+    "uptime": "Uptime Availability",
+    "sync": "Cloud Sync"
+  },
+  "contact": {
+    "title": "Interested?",
+    "subtitle": "Describe your vision — we will schedule a free consultation and prepare a proposal tailored to your needs.",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "message": "Message (optional)",
+    "send": "Send Inquiry",
+    "required": "This field is required",
+    "phone_error": "Enter a valid phone number",
+    "email_error": "Enter a valid email address",
+    "gdpr1": "I agree to the",
+    "gdpr2": "privacy policy",
+    "gdpr3": "and data protection",
+    "gdpr_error": "You must accept the privacy policy to continue",
+    "or": "or contact us directly",
+    "success_title": "Thank you!",
+    "success_message": "We will get back to you soon.",
+    "sending": "Sending...",
+    "send_error": "Failed to send. Please try again.",
+    "label_phone": "Phone",
+    "label_location": "Location"
+  },
+  "privacy": {
+    "title": "Data Protection",
+    "p1": "Personal data provided will be used strictly in accordance with EU data protection regulations. Personal data is collected voluntarily and used for consultations, advertising and marketing only with explicit consent. Please note that this website does not store your data in digital form on web servers.",
+    "gdpr_title": "GDPR – EU Regulation 2016/679",
+    "p2": "On May 25, 2016, in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation), Private software solutions company Dentio is obliged to inform all website users about the collection, storage and processing of personal data.",
+    "p3": "Users who contact us through the contact form on the website grant us the right to store personal data (first name, last name, phone number and email address) exclusively for the purpose of responding to inquiries and providing requested information. This data is not shared with third parties nor used for commercial purposes without the explicit consent of the user. Users have the right to access, correct and delete their personal data in accordance with applicable regulations.",
+    "accept": "Accept"
+  },
+  "clients": {
+    "title": "Our Clients",
+    "subtitle": "Clinics that use the Dentio system to manage their operations.",
+    "cta": "Want your clinic to be next?",
+    "cta_btn": "Get In Touch",
+    "medico_desc": "Dental practice with a complete desktop and web solution for managing patients, appointments and treatments.",
+    "ssdental_desc": "Dental practice with a web platform, email system and cloud sync for efficient clinic management."
+  },
+  "footer": {
+    "desc": "Customizable software solutions for dental clinics — we listen to your needs and build tailored desktop and web applications.",
+    "links": "Quick Links",
+    "tech": "Technologies",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  }
+}

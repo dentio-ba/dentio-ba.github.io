@@ -1,14 +1,12 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { TranslateService } from '../../services/translate.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, TranslatePipe],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss'
 })
-export class HeroComponent {
-  ts = inject(TranslateService);
-}
+export class HeroComponent {}

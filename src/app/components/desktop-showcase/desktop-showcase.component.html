@@ -6,8 +6,8 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           <span>Desktop</span>
         </div>
-        <h2>{{ ts.t('desktop.title') }}</h2>
-        <p class="showcase-desc">{{ ts.t('desktop.subtitle') }}</p>
+        <h2>{{ 'desktop.title' | translate }}</h2>
+        <p class="showcase-desc">{{ 'desktop.subtitle' | translate }}</p>
 
         <div class="showcase-features">
           @for (f of features; track f.key) {
@@ -29,8 +29,8 @@
                 }
               </div>
               <div>
-                <h4>{{ ts.t('desktop.' + f.key + '.title') }}</h4>
-                <p>{{ ts.t('desktop.' + f.key + '.desc') }}</p>
+                <h4>{{ 'desktop.' + f.key + '.title' | translate }}</h4>
+                <p>{{ 'desktop.' + f.key + '.desc' | translate }}</p>
               </div>
             </div>
           }
@@ -48,7 +48,7 @@
             <span class="window-title">Dentio Desktop</span>
           </div>
           <div class="window-body">
-            <img [src]="'dentio-desktop-' + ts.lang() + '.png'" alt="Dentio Desktop Application" class="desktop-screenshot" />
+            <img [src]="'dentio-desktop-' + lang.currentLang + '.png'" alt="Dentio Desktop Application" class="desktop-screenshot" />
           </div>
         </div>
       </div>
