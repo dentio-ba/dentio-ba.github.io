@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslatePipe } from '@ngx-translate/core';
+import { SeoService } from '../../services/seo.service';
 
 @Component({
   selector: 'app-clients-page',
@@ -9,7 +10,9 @@ import { TranslatePipe } from '@ngx-translate/core';
   templateUrl: './clients-page.component.html',
   styleUrl: './clients-page.component.scss',
 })
-export class ClientsPageComponent {
+export class ClientsPageComponent implements OnInit {
+  private seo = inject(SeoService);
+
   clients = [
     {
       name: 'Medico',
@@ -28,4 +31,13 @@ export class ClientsPageComponent {
       services: ['Web App', 'Email System', 'Cloud Sync'],
     },
   ];
+
+  ngOnInit(): void {
+    this.seo.update({
+      title: 'Klijenti — Dentio | Stomatološke ordinacije koje koriste Dentio',
+      description: 'Pogledajte stomatološke ordinacije u BiH koje koriste Dentio softver za upravljanje pacijentima, terminima i tretmanima.',
+      keywords: 'dentio klijenti, stomatološke ordinacije BiH, dental software klijenti, Medico ordinacija, SS Dental Konjic',
+      url: 'https://www.dentio.ba/clients',
+    });
+  }
 }

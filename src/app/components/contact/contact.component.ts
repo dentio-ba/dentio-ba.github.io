@@ -50,6 +50,7 @@ export class ContactComponent {
     this.sendError = false;
 
     const templateParams = {
+      to_email: 'info@dentio.ba',
       from_name: `${this.form.firstName} ${this.form.lastName}`,
       first_name: this.form.firstName,
       last_name: this.form.lastName,
