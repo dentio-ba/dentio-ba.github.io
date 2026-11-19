@@ -17,7 +17,7 @@ export class ClientsPageComponent implements OnInit {
     {
       name: 'Medico',
       location: 'Sarajevo, BiH',
-      logo: 'clients/medico-logo.png',
+      logo: 'clients/medico-logo.webp',
       website: 'www.medico.ba',
       descKey: 'clients.medico_desc',
       services: ['Desktop App', 'Web App', 'Cloud Sync', 'Email System'],
@@ -25,7 +25,7 @@ export class ClientsPageComponent implements OnInit {
     {
       name: 'SS Dental',
       location: 'Konjic, BiH',
-      logo: 'clients/ssdental-logo.png',
+      logo: 'clients/ssdental-logo.webp',
       website: 'www.ssdental.ba',
       descKey: 'clients.ssdental_desc',
       services: ['Web App', 'Email System', 'Cloud Sync'],
