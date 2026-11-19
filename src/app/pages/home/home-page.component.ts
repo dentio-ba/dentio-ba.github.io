@@ -21,7 +21,7 @@ export class HomePageComponent implements OnInit {
     this.seo.update({
       title: 'Dentio — Softver za stomatološke ordinacije | Desktop & Web',
       description: 'Dentio — kompletno softversko rješenje za stomatološke ordinacije u BiH. Desktop aplikacija i web platforma za upravljanje pacijentima, terminima i tretmanima.',
-      keywords: 'dentio, stomatološki softver, dental software, softver za zubare, softver za stomatološke ordinacije BiH, dental practice management, zakazivanje termina online, evidencija pacijenata, stomatološki program, Sarajevo',
+      keywords: 'dentio, stomatološki softver, dental software, softver za zubare, softver za stomatološke ordinacije BiH, dental practice management, zakazivanje termina online, evidencija pacijenata, stomatološki program, Sarajevo, Emir Šator, Emir Sator, softversko rješenje, softversko rjesenje',
       url: 'https://www.dentio.ba/',
     });
   }

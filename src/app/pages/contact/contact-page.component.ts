@@ -20,7 +20,7 @@ export class ContactPageComponent implements OnInit {
     this.seo.update({
       title: 'Kontakt — Dentio | Besplatna konsultacija za stomatološki softver',
       description: 'Kontaktirajte Dentio tim za besplatnu konsultaciju. Opišite nam potrebe Vaše stomatološke ordinacije i pripremit ćemo prilagođeno softversko rješenje.',
-      keywords: 'dentio kontakt, stomatološki softver kontakt, besplatna konsultacija, dental software BiH kontakt, softver za ordinaciju upit',
+      keywords: 'dentio kontakt, stomatološki softver kontakt, besplatna konsultacija, dental software BiH kontakt, softver za ordinaciju upit, Emir Šator, Emir Sator',
       url: 'https://www.dentio.ba/contact',
     });
   }
