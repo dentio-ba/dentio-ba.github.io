@@ -103,4 +103,16 @@ footer {
     font-size: 13px;
     color: var(--slate-500);
   }
+
+  .footer-privacy-link {
+    display: block;
+    margin-top: 8px;
+    font-size: 13px;
+    color: var(--slate-400);
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--green-400);
+    }
+  }
 }

@@ -220,3 +220,31 @@ nav {
     display: flex;
   }
 }
+
+@media (max-width: 330px) {
+  .lang-switch {
+    gap: 2px;
+    padding: 2px 4px;
+  }
+
+  .lang-btn {
+    gap: 3px;
+    padding: 3px 5px;
+    font-size: 11px;
+
+    .lang-flag-img {
+      width: 16px;
+      height: 11px;
+    }
+  }
+
+  .lang-divider {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 300px) {
+  .lang-btn span {
+    display: none;
+  }
+}

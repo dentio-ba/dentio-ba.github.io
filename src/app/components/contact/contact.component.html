@@ -113,6 +113,7 @@
     </div>
   </div>
 
+
   @if (showPrivacy) {
     <div class="privacy-overlay" (click)="showPrivacy = false">
       <div class="privacy-modal" (click)="$event.stopPropagation()">
@@ -121,9 +122,37 @@
           <h2>{{ 'privacy.title' | translate }}</h2>
           <p>{{ 'privacy.p1' | translate }}</p>
 
+          <h2>{{ 'privacy.cookies_title' | translate }}</h2>
+          <p>{{ 'privacy.cookies_p1' | translate }}</p>
+          <p>{{ 'privacy.cookies_p2' | translate }}</p>
+          <div class="cookies-toggle">
+            <button class="btn-cookies" [class.disabled]="!cookiesEnabled" (click)="toggleCookies()">
+              @if (cookiesEnabled) {
+                {{ 'privacy.cookies_disable' | translate }}
+              } @else {
+                {{ 'privacy.cookies_enable' | translate }}
+              }
+            </button>
+            <span class="cookies-status">
+              @if (cookiesEnabled) {
+                {{ 'privacy.cookies_enabled' | translate }}
+              } @else {
+                {{ 'privacy.cookies_disabled' | translate }}
+              }
+            </span>
+          </div>
+
+          <h2>{{ 'privacy.copyright_title' | translate }}</h2>
+          <p>{{ 'privacy.copyright_p1' | translate }}</p>
+
+          <h2>{{ 'privacy.warranty_title' | translate }}</h2>
+          <p>{{ 'privacy.warranty_p1' | translate }}</p>
+
+          <h2>{{ 'privacy.trademarks_title' | translate }}</h2>
+          <p>{{ 'privacy.trademarks_p1' | translate }}</p>
+
           <h2>{{ 'privacy.gdpr_title' | translate }}</h2>
           <p>{{ 'privacy.p2' | translate }}</p>
-
           <p>{{ 'privacy.p3' | translate }}</p>
 
           <button class="privacy-accept-btn" (click)="acceptPrivacy()">{{ 'privacy.accept' | translate }}</button>

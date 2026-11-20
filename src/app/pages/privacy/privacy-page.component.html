@@ -1,0 +1,61 @@
+<section class="privacy-hero section-dark">
+  <div class="container">
+    <h1>{{ 'privacy.title' | translate }}</h1>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div class="privacy-content">
+
+      <div class="privacy-section">
+        <h2>{{ 'privacy.title' | translate }}</h2>
+        <p>{{ 'privacy.p1' | translate }}</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>{{ 'privacy.cookies_title' | translate }}</h2>
+        <p>{{ 'privacy.cookies_p1' | translate }}</p>
+        <p>{{ 'privacy.cookies_p2' | translate }}</p>
+        <div class="cookies-toggle">
+          <button class="btn-cookies" [class.disabled]="!cookiesEnabled" (click)="toggleCookies()">
+            @if (cookiesEnabled) {
+              {{ 'privacy.cookies_disable' | translate }}
+            } @else {
+              {{ 'privacy.cookies_enable' | translate }}
+            }
+          </button>
+          <p class="cookies-status">
+            @if (cookiesEnabled) {
+              {{ 'privacy.cookies_enabled' | translate }}
+            } @else {
+              {{ 'privacy.cookies_disabled' | translate }}
+            }
+          </p>
+        </div>
+      </div>
+
+      <div class="privacy-section">
+        <h2>{{ 'privacy.copyright_title' | translate }}</h2>
+        <p>{{ 'privacy.copyright_p1' | translate }}</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>{{ 'privacy.warranty_title' | translate }}</h2>
+        <p>{{ 'privacy.warranty_p1' | translate }}</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>{{ 'privacy.trademarks_title' | translate }}</h2>
+        <p>{{ 'privacy.trademarks_p1' | translate }}</p>
+      </div>
+
+      <div class="privacy-section">
+        <h2>{{ 'privacy.gdpr_title' | translate }}</h2>
+        <p>{{ 'privacy.p2' | translate }}</p>
+        <p>{{ 'privacy.p3' | translate }}</p>
+      </div>
+
+    </div>
+  </div>
+</section>

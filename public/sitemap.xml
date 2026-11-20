@@ -7,12 +7,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.dentio.ba/home</loc>
-    <lastmod>2026-11-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
     <loc>https://www.dentio.ba/solutions</loc>
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
@@ -29,5 +23,11 @@
     <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.dentio.ba/zastita-podataka</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

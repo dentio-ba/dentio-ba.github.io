@@ -139,9 +139,22 @@
   "privacy": {
     "title": "Data Protection",
     "p1": "Personal data provided will be used strictly in accordance with EU data protection regulations. Personal data is collected voluntarily and used for consultations, advertising and marketing only with explicit consent. Please note that this website does not store your data in digital form on web servers.",
+    "cookies_title": "Cookies",
+    "cookies_p1": "Cookies are small text files that are copied to your computer when you visit a website. They do not contain viruses and do not collect personal data. You can disable cookies in your browser settings. This website uses cookies exclusively for anonymous statistical processing and improving user experience.",
+    "cookies_p2": "Our website uses Google Analytics to analyze website visits. Google Analytics uses cookies that are transferred to and stored on Google servers. Google may use this data to evaluate website usage. Google will not associate your IP address with other data held by Google. You can prevent cookie installation by selecting appropriate browser settings. However, please note that in this case you may not be able to use all features of this website to their full extent. By using this website, you consent to the processing of data collected by Google in the manner and for the purpose described.",
+    "cookies_disable": "Disable cookies",
+    "cookies_enable": "Enable cookies",
+    "cookies_disabled": "Cookies are disabled. Google Analytics will not track your visits.",
+    "cookies_enabled": "Cookies are enabled.",
+    "copyright_title": "Copyright",
+    "copyright_p1": "All texts, graphics, images, sounds, animations and videos are subject to copyright protection and other intellectual property laws. They may not be copied for commercial purposes or distributed, nor may they be modified or used on other websites. Some parts of this website contain content that is available under third-party copyright protection.",
+    "warranty_title": "Warranties and Liability",
+    "warranty_p1": "Private company Dentio makes no warranties for the accuracy or completeness of information on this website. We assume no liability for special, indirect or consequential damages or any damages arising from the use or inability to use the information provided, except in cases of gross negligence or willful misconduct.",
+    "trademarks_title": "Trademarks and Licenses",
+    "trademarks_p1": "Private company Dentio retains all rights to trademarks, brands, logos and emblems found on or embedded in the website. Visitors to the website do not acquire any licenses for the use of these trademarks, brands, logos or emblems.",
     "gdpr_title": "GDPR – EU Regulation 2016/679",
     "p2": "On May 25, 2016, in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation), Private software solutions company Dentio is obliged to inform all website users about the collection, storage and processing of personal data.",
-    "p3": "Users who contact us through the contact form on the website grant us the right to store personal data (first name, last name, phone number and email address) exclusively for the purpose of responding to inquiries and providing requested information. This data is not shared with third parties nor used for commercial purposes without the explicit consent of the user. Users have the right to access, correct and delete their personal data in accordance with applicable regulations.",
+    "p3": "Users who contact us through the contact form on the website grant us the right to store personal data (first name, last name, phone number, email address and message) exclusively for the purpose of responding to inquiries and providing requested information. This data is not shared with third parties nor used for commercial purposes without the explicit consent of the user. Users have the right to access, correct and delete their personal data in accordance with applicable regulations.",
     "accept": "Accept"
   },
   "clients": {
@@ -157,6 +170,7 @@
     "links": "Quick Links",
     "tech": "Technologies",
     "contact": "Contact",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "privacy": "Data Protection"
   }
 }

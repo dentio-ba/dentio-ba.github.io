@@ -3,6 +3,8 @@ import { FormsModule } from '@angular/forms';
 import { TranslatePipe } from '@ngx-translate/core';
 import emailjs from '@emailjs/browser';
 
+declare let gtag: Function;
+
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -25,6 +27,7 @@ export class ContactComponent {
   showPrivacy = false;
   sending = false;
   sendError = false;
+  cookiesEnabled = localStorage.getItem('dentio-cookies-enabled') !== 'false';
 
   get phoneValid(): boolean {
     return /^[0-9+\s\-]{6,15}$/.test(this.form.phone);
@@ -37,6 +40,23 @@ export class ContactComponent {
   acceptPrivacy() {
     this.gdprAccepted = true;
     this.showPrivacy = false;
+  }
+
+  toggleCookies(): void {
+    this.cookiesEnabled = !this.cookiesEnabled;
+    localStorage.setItem('dentio-cookies-enabled', String(this.cookiesEnabled));
+
+    if (!this.cookiesEnabled) {
+      (window as any)['ga-disable-G-KYFV73CM3V'] = true;
+      document.cookie = '_ga=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.dentio.ba';
+      document.cookie = '_ga_KYFV73CM3V=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.dentio.ba';
+      document.cookie = '_gid=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=.dentio.ba';
+    } else {
+      (window as any)['ga-disable-G-KYFV73CM3V'] = false;
+      if (typeof gtag !== 'undefined') {
+        gtag('config', 'G-KYFV73CM3V');
+      }
+    }
   }
 
   onSubmit() {
